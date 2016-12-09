@@ -1,0 +1,57 @@
+class Entry 
+  String entryId
+  String username 
+  String datePosted 
+  String postContent
+  String rating
+  JsonArray comments
+
+  Entry(JSONobject postData);
+  void addComment(JsonObect commentData ); 
+  String toHTML();
+
+class Comment
+  String commentId 
+  String commentUsername 
+  String commentContent 
+  int rating
+  String entryId
+
+  Comment(JSONObject commentData);
+
+
+
+Static class accounts
+    String getUser ( String username, String authToken) 
+    boolean regirsterNormal ( String email, String username, String password ) 
+    boolean registerSocial ( String username, String email, String fbAuthToken)
+    String loginNormal ( String username, String password)
+    String loginFb( String authToken )
+    boolean authCheck ( String authToken )
+    boolean logout ( String authToken/fbAuthToken )
+    boolean updateCert ( String authToken, String schoolEmail)
+    boolean updateAccount ( String authToken, Array accountFields )
+    boolean requestPassReset (String authToken)
+    
+
+Static class Services
+    jsonArray getFavourites (String authToken, String userId)
+    jsonArray getLikes (String authToken, String userId)
+    boolean disable (String adminToken, String userId)
+    jsonArray getCollageList ()
+    jsonArray getProgramList ()
+    jsonArray getClassified (String collegeId, String programId, jsonObject filter)
+    jsonArray getEntries (String collegeId, String programId, jsonObject filter) 
+    jsonObject getEntry (String entryId)
+    jsonArray getComments (String entryId)
+    boolean postEntry (String authToken, String entryId, jsonObject postPackege)
+    boolean addComment (String authToken, String entryId, jsonObject commentPackege)
+    boolean addRating (String authToken, String entryId, int rating)
+    boolean addFile (String authToken, File file, jsonObject filePackege)
+    boolean flag (String authToken, String entryId)
+    boolean favourite (String authToken, String entryId)
+    boolean edit (String authToken, String entryId, jsonObject entryPackege) 
+    jsonArray searchEntry (String authToken, jsonObject filters)
+
+
+

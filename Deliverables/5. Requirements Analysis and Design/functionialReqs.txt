@@ -1,0 +1,79 @@
+
+accounts 
+  authCheck 
+  register
+  	Normal
+  	Social Media
+  login
+  	Normal
+  		Remember
+  	Social Media 
+  logout 
+  update to cert 
+  update account / passord 
+  request pass reset
+  	reset pass
+  get favourites 
+  get liked 
+  Disable
+
+
+services 
+   get college list 
+   get program list 
+   get classes 
+   get classified 
+   get Entries 
+   get Entry 
+   get comments for post/classified 
+
+
+Entry
+	post 
+	add comment 
+ 	add rating 
+ 	Add File
+ 	flag
+ 	Fav
+ 	edit
+ 	delete
+	
+	
+
+client 
+  register 
+  	
+  login 
+
+  update account 
+
+  update password 
+
+  add classified
+  
+  add notes 
+
+  post comment 
+
+  rate 
+
+  get posts 
+
+  get colleges 
+
+  get programs 
+
+  get class 
+
+  get favourites 
+
+  get what you rated 
+
+  get favourites 
+
+  set fav 
+
+  set rating 
+
+
+

@@ -1,0 +1,69 @@
+NavigationDrawer 
+  ActionBarToggle toggle
+  Listener ItemSelected(NavigationView.OnNavigationItemSelectedListener())
+  
+  
+  
+ViewPagerAdapter extends FragmentPagerAdapter
+  List<Fragment> mFragmentList
+  List<Fragment> mFragmentTitleList
+  
+  ViewPagerAdapter(int position)
+  
+  Fragment getItem(int position)
+  int getCount()
+  void addFrag(Fragment fragment, String title)
+  CharSequence getPageTitle(int position)
+  
+  
+  
+GobalVolley 
+  GlobalVolley sInstance 
+  RequestQueue rq
+  Context mContext
+  
+  GlobalVolley(Context context)
+  
+  GlobalVolley getInstance(Context context)
+  RequestQueue getRequestQueue() 
+  void addToQueue(Request req)
+  
+
+
+CommentObject 
+  String commentId
+  String postId 
+  String posterId
+  String posterUsername
+  String content
+
+  CommentObject(JsonObject comment)
+
+  get/set all attr
+
+
+
+EntryObject
+  String username
+  String datePosted
+  String postContent
+  String rating
+  CommentObject[] comments
+  
+  void addComment(JsonObject comment)
+  get/set each element
+  
+  
+  
+Adapter extends RecyclerView.Adapter<AllAdapter.ViewHolderAll>
+  
+  void onBindViewHolder(final ViewHolderAdapter, final int position) 
+  int getItemCount()
+  
+  inner class ViewHolderAdapter extends RecyclerView.ViewHolder 
+    List<Textfieds> fields
+    
+    ViewHolder Adapter(View itemView)
+  
+
+  
